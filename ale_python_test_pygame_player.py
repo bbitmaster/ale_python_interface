@@ -62,6 +62,7 @@ print("random_seed: " + str(random_seed))
 
 ale.loadROM(sys.argv[1])
 legal_actions = ale.getMinimalActionSet()
+print legal_actions
 
 (screen_width,screen_height) = ale.getScreenDims()
 print("width/height: " +str(screen_width) + "/" + str(screen_height))
@@ -112,24 +113,24 @@ while(episode < 10):
 
 
     #Display ram bytes
-    font = pygame.font.SysFont("Ubuntu Mono",30)
+    font = pygame.font.SysFont("Ubuntu Mono",32)
     text = font.render("RAM: " ,1,(255,208,208))
     screen.blit(text,(330,10))
 
-    font = pygame.font.SysFont("Ubuntu Mono",20)
+    font = pygame.font.SysFont("Ubuntu Mono",25)
     height = font.get_height()*1.2
 
     line_pos = 40
     ram_pos = 0
     while(ram_pos < 128):
-        ram_string = ''.join(["%02X "%ram[x] for x in range(ram_pos,min(ram_pos+20,128))])
+        ram_string = ''.join(["%02X "%ram[x] for x in range(ram_pos,min(ram_pos+16,128))])
         text = font.render(ram_string,1,(255,255,255))
         screen.blit(text,(340,line_pos))
         line_pos += height
-        ram_pos +=20
+        ram_pos +=16
         
     #display current action
-    font = pygame.font.SysFont("Ubuntu Mono",30)
+    font = pygame.font.SysFont("Ubuntu Mono",32)
     text = font.render("Current Action: " + str(a) ,1,(208,208,255))
     height = font.get_height()*1.2
     screen.blit(text,(330,line_pos))
@@ -139,7 +140,6 @@ while(episode < 10):
     font = pygame.font.SysFont("Ubuntu Mono",30)
     text = font.render("Total Reward: " + str(total_reward) ,1,(208,255,255))
     screen.blit(text,(330,line_pos))
-
 
     pygame.display.flip()
 

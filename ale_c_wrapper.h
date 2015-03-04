@@ -2,10 +2,6 @@
 #define __ALE_C_WRAPPER_H__
 
 #include <ale_interface.hpp>
-#include <python2.7/Python.h>
-//We should look into fixing this warning later, disable for now
-#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
-#include <numpy/arrayobject.h>
 
 extern "C" {
     //declares int rgb_palette[256]

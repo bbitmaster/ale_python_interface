@@ -10,4 +10,5 @@ Installation instructions and documentation for using it can be found on the git
 https://github.com/bbitmaster/ale_python_interface/wiki
 
 This library was written by Ben Goodrich, as part of the Machine Intelligence Lab at The University of Tennessee.
+
 mil.utk.edu

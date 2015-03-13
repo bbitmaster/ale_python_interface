@@ -98,7 +98,6 @@ class ALEInterface(object):
             width = ale_lib.getScreenWidth(self.obj)
             height = ale_lib.getScreenWidth(self.obj)
             screen_data = np.zeros(width*height,dtype=np.uint32)
-        screen_data[0] = 0x00ff0000;
         ale_lib.getScreenRGB(self.obj,as_ctypes(screen_data))
         return screen_data
 

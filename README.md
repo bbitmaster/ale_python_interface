@@ -11,4 +11,4 @@ https://github.com/bbitmaster/ale_python_interface/wiki
 
 This library was written by Ben Goodrich, as part of the Machine Intelligence Lab at The University of Tennessee.
 
-mil.engr.utk.edu
+http://mil.engr.utk.edu/

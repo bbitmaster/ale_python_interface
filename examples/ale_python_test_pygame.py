@@ -3,7 +3,7 @@
 # ale_python_test_pygame.py
 # Author: Ben Goodrich
 #
-# This modified ale_python_test1.py to do display screen contents using pygame
+# This modified ale_python_test1.py to display screen contents using pygame
 import sys
 from ale_python_interface import ALEInterface
 import numpy as np

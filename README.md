@@ -8,3 +8,6 @@ It is designed to be fast. Example code is provided that demonstrates an agent t
 
 Installation instructions and documentation for using it can be found on the github wiki linked below:
 https://github.com/bbitmaster/ale_python_interface/wiki
+
+This library was written by Ben Goodrich, while working for the Machine Intelligence Lab at The University of Tennessee.
+mil.utk.edu
